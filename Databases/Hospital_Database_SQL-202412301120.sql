@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 8.0.19, for Win64 (x86_64)
 --
--- Host: localhost    Database: Hospital_Database_SQL
+-- Host: localhost    Database: hospital_database_sql
 -- ------------------------------------------------------
 -- Server version	8.0.40
 
@@ -98,11 +98,15 @@ DROP TABLE IF EXISTS `hospitals`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `hospitals` (
-  `ID` varchar(100) NOT NULL,
+  `ID` int unsigned NOT NULL AUTO_INCREMENT,
   `Hospital_Name` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
   `Hospital_Address` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `size_beds` varchar(50) DEFAULT NULL,
+  `Type` varchar(50) DEFAULT NULL,
+  `emergency_services` varchar(50) DEFAULT NULL,
+  `year_of_accreditation` year DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=77 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -111,6 +115,7 @@ CREATE TABLE `hospitals` (
 
 LOCK TABLES `hospitals` WRITE;
 /*!40000 ALTER TABLE `hospitals` DISABLE KEYS */;
+INSERT INTO `hospitals` VALUES (39,'Royal London Hospital','Whitechapel Rd, London E1 1BB','720','General','Yes',2015),(40,'Manchester Royal Infirmary','Oxford Rd, Manchester M13 9WL','750','Teaching','Yes',2016),(41,'St. Thomas\' Hospital','Westminster Bridge Rd, London SE1 7EH','840','General','No',2014),(42,'Birmingham City Hospital','Dudley Rd, Birmingham B18 7QH','580','General','Yes',2013),(43,'Addenbrooke\'s Hospital','Hills Rd, Cambridge CB2 0QQ','1,000','Teaching','Yes',2017),(44,'Great Ormond Street Hospital','Great Ormond St, London WC1N 3JH','389','Children\'s','No',2016),(45,'University Hospital Southampton','Tremona Rd, Southampton SO16 6YD','1,100','Teaching','Yes',2018),(46,'Royal Victoria Infirmary','Queen Victoria Rd, Newcastle NE1 4LP','580','General','Yes',2015),(47,'Queen Elizabeth Hospital','Mindelsohn Way, Birmingham B15 2GW','1,200','General','Yes',2017),(48,'Norfolk and Norwich Hospital','Colney Ln, Norwich NR4 7UY','1,000','General','No',2014),(49,'Leeds General Infirmary','Great George St, Leeds LS1 3EX','850','General','Yes',2019),(50,'Guy\'s Hospital','Great Maze Pond, London SE1 9RT','400','Specialist','No',2016),(51,'Charing Cross Hospital','Fulham Palace Rd, London W6 8RF','511','Teaching','Yes',2017),(52,'John Radcliffe Hospital','Headley Way, Oxford OX3 9DU','950','Teaching','Yes',2013),(53,'King\'s College Hospital','Denmark Hill, London SE5 9RS','1,200','Teaching','No',2015),(54,'Hull Royal Infirmary','Anlaby Rd, Hull HU3 2JZ','650','General','Yes',2018),(55,'Bristol Royal Infirmary','Upper Maudlin St, Bristol BS2 8HW','677','General','No',2016),(56,'Western General Hospital','Crewe Rd S, Edinburgh EH4 2XU','600','General','Yes',2019),(57,'Ninewells Hospital','Dundee DD2 1SY','900','Teaching','Yes',2017),(58,'Queen\'s Medical Centre','Derby Rd, Nottingham NG7 2UH','1,300','Teaching','Yes',2014),(59,'Royal Free Hospital','Pond St, London NW3 2QG','500','General','No',2016),(60,'Freeman Hospital','Freeman Rd, Newcastle NE7 7DN','800','Specialist','Yes',2013),(61,'Glasgow Royal Infirmary','Castle St, Glasgow G4 0SF','1,000','General','Yes',2018),(62,'Royal Sussex County Hospital','Eastern Rd, Brighton BN2 5BE','600','General','No',2019),(63,'St. George\'s Hospital','Blackshaw Rd, London SW17 0QT','1,300','Teaching','Yes',2015),(64,'Wythenshawe Hospital','Southmoor Rd, Manchester M23 9LT','900','Teaching','Yes',2017),(65,'Morriston Hospital','Heol Maes Eglwys, Swansea SA6 6NL','750','General','No',2014),(66,'Derriford Hospital','Derriford Rd, Plymouth PL6 8DH','1,000','General','Yes',2016),(67,'Royal Blackburn Hospital','Haslingden Rd, Blackburn BB2 3HH','700','General','No',2015),(68,'Stoke Mandeville Hospital','Mandeville Rd, Aylesbury HP21 8AL','550','Specialist','Yes',2013),(69,'James Cook University Hospital','Marton Rd, Middlesbrough TS4 3BW','1,000','Teaching','Yes',2019),(70,'Aberdeen Royal Infirmary','Foresterhill, Aberdeen AB25 2ZN','900','General','Yes',2018),(71,'Queen Elizabeth University Hosp','Govan Rd, Glasgow G51 4TF','1,700','Teaching','Yes',2017),(72,'York Hospital','Wigginton Rd, York YO31 8HE','700','General','No',2016),(73,'Royal Derby Hospital','Uttoxeter Rd, Derby DE22 3NE','1,200','General','Yes',2015),(74,'Milton Keynes University Hosp','Standing Way, Milton Keynes MK6 5LD','500','General','Yes',2019),(75,'Southmead Hospital','Southmead Rd, Bristol BS10 5NB','1,000','General','Yes',2018),(76,'Princess Royal Hospital','Lewes Rd, Haywards Heath RH16 4EX','550','General','No',2014);
 /*!40000 ALTER TABLE `hospitals` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -216,7 +221,7 @@ LOCK TABLES `prescriptions` WRITE;
 UNLOCK TABLES;
 
 --
--- Dumping routines for database 'Hospital_Database_SQL'
+-- Dumping routines for database 'hospital_database_sql'
 --
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -228,4 +233,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-12-29 13:57:17
+-- Dump completed on 2024-12-30 11:20:44
