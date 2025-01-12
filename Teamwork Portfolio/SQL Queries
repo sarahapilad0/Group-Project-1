@@ -1,1 +1,134 @@
+SQL Queries for MYSQL and MS Access
+
+1. Prints a list of all doctors based at a particular hospital:
+SELECT d.Doctor_Name
+FROM doctors d
+JOIN hospitals h ON d.Hospital_ID = h.Hospital_Name
+WHERE h.Hospital_Name = 'Specific Hospital Name';
+
+2. Prints a list of all prescriptions for a particular patient, ordered by the prescription date:
+SELECT pr.ID AS Prescription_ID, m.Medication_Name, d.Doctor_Name, pr.Date_Of_Prescription
+FROM prescription pr
+JOIN medication m ON pr.Medication_ID = m.ID
+JOIN doctors d ON pr.Doctor_ID = d.ID
+WHERE pr.Patient_ID = (SELECT ID FROM patients WHERE Patient_Name = 'Specific Patient Name')
+ORDER BY pr.Date_Of_Prescription;
+
+3. Prints a list of all prescriptions that a particular doctor has prescribed:
+SELECT pr.ID AS Prescription_ID, m.Medication_Name, p.Patient_Name, pr.Date_Of_Prescription
+FROM prescription pr
+JOIN medication m ON pr.Medication_ID = m.ID
+JOIN patients p ON pr.Patient_ID = p.ID
+WHERE pr.Doctor_ID = (SELECT ID FROM doctors WHERE Doctor_Name = 'Specific Doctor Name');
+
+4. Prints a table showing all prescriptions ordered by the patient name alphabetically
+SELECT p.Patient_Name, m.Medication_Name, d.Doctor_Name, pr.Date_Of_Prescription
+FROM prescription pr
+JOIN medication m ON pr.Medication_ID = m.ID
+JOIN patients p ON pr.Patient_ID = p.ID
+JOIN doctors d ON pr.Doctor_ID = d.ID
+ORDER BY p.Patient_Name;
+
+5. Adds a new patient to the database, including being registered with one of the doctors: 
+INSERT INTO patients (Patient_Name, Date_Of_Birth, Address, Assigned_Doctor)
+VALUES ('New Patient Name', '1995-08-10', '123 Main St', 
+       (SELECT ID FROM doctors WHERE Doctor_Name = 'Specific Doctor Name'));
+
+6. Modify address details of an existing patient:
+UPDATE patients
+SET Address = 'New Address Here'
+WHERE Patient_Name = 'Specific Patient Name';
+
+7. Prints a list of all patient names and addresses for patients registered to doctors based at one particular hospital:
+SELECT p.Patient_Name, p.Address
+FROM patients p
+JOIN doctors d ON p.Assigned_Doctor = d.ID
+JOIN hospitals h ON d.Hospital_ID = h.Hospital_Name
+WHERE h.Hospital_Name = 'Specific Hospital Name';
+
+8. Prints a list of all doctors based at teaching hospitals accredited between 2015-2024: 
+SELECT d.Doctor_Name
+FROM doctors d
+JOIN hospitals h ON d.Hospital_ID = h.Hospital_Name
+WHERE h.Type = 'Teaching' AND h.Year_of_Accreditation BETWEEN 2015 AND 2024;
+
+9. Lists all patients who may have a particular disease based on which medication they have been prescribed:
+SELECT DISTINCT p.Patient_Name, p.Address
+FROM patients p
+JOIN prescription pr ON p.ID = pr.Patient_ID
+JOIN medication m ON pr.Medication_ID = m.ID
+JOIN diseases d ON m.ID = d.Medication_ID
+WHERE d.Disease_Name = 'Specific Disease';
+
+10. Lists all doctors who specialise in a particular disease:
+SELECT d.Doctor_Name
+FROM doctors d
+JOIN diseases dis ON d.ID = dis.Specialist_Doctor
+WHERE dis.Disease_Name = 'Specific Disease';
+
+11. Lists all lab results for all patients over the age of 60:
+SELECT lr.ID AS Lab_Result_ID, p.Patient_Name, lr.Test_Type, lr.Test_Result
+FROM lab_results lr
+JOIN patients p ON lr.Patient_ID = p.ID
+WHERE TIMESTAMPDIFF(YEAR, p.Date_Of_Birth, CURDATE()) > 60;
+
+12. Prints a list of all appointments for a given patient:
+SELECT a.ID AS Appointment_ID, d.Doctor_Name, a.Appointment_Date
+FROM appointments a
+JOIN doctors d ON a.Doctor_ID = d.ID
+WHERE a.Patient_ID = (SELECT ID FROM patients WHERE Patient_Name = 'Specific Patient Name');
+
+13. Prints a list of all appointments for a given doctor: 
+SELECT a.ID AS Appointment_ID, p.Patient_Name, a.Appointment_Date
+FROM appointments a
+JOIN patients p ON a.Patient_ID = p.ID
+WHERE a.Doctor_ID = (SELECT ID FROM doctors WHERE Doctor_Name = 'Specific Doctor Name');
+
+14. Prints all prescriptions made from a particular hospital ordered alphabetically by the name of the medication:
+SELECT m.Medication_Name, d.Doctor_Name, p.Patient_Name, h.Hospital_Name
+FROM prescription pr
+JOIN medication m ON pr.Medication_ID = m.ID
+JOIN patients p ON pr.Patient_ID = p.ID
+JOIN doctors d ON pr.Doctor_ID = d.ID
+JOIN hospitals h ON d.Hospital_ID = h.Hospital_Name
+WHERE h.Hospital_Name = 'Specific Hospital Name'
+ORDER BY m.Medication_Name;
+
+15. Prints a list of all lab results from all hospitals accredited between 2013-2020:
+SELECT lr.ID AS Lab_Result_ID, p.Patient_Name, lr.Test_Type, lr.Test_Result, h.Hospital_Name
+FROM lab_results lr
+JOIN patients p ON lr.Patient_ID = p.ID
+JOIN doctors d ON lr.Doctor_ID = d.ID
+JOIN hospitals h ON d.Hospital_ID = h.Hospital_Name
+WHERE h.Year_of_Accreditation BETWEEN 2013 AND 2020;
+
+16. Identifies which doctor has made the most prescriptions:
+SELECT d.Doctor_Name, COUNT(pr.ID) AS Total_Prescriptions
+FROM doctors d
+JOIN prescription pr ON d.ID = pr.Doctor_ID
+GROUP BY d.ID
+ORDER BY Total_Prescriptions DESC
+LIMIT 1;
+
+17. Prints a list of all doctors at the hospital with the biggest size (number of beds):
+SELECT d.Doctor_Name
+FROM doctors d
+JOIN hospitals h ON d.Hospital_ID = h.Hospital_Name
+WHERE h.Bed_Size = (SELECT MAX(Bed_Size) FROM hospitals);
+
+18. Lists all hospital names accredited prior to 2015 and have emergency services:
+SELECT Hospital_Name
+FROM hospitals
+WHERE Year_of_Accreditation < 2015 AND Emergency_Services = 'Yes';
+
+19. Lists all patients registered with doctors based at hospitals with <400 beds:
+SELECT p.Patient_Name, p.Address
+FROM patients p
+JOIN doctors d ON p.Assigned_Doctor = d.ID
+JOIN hospitals h ON d.Hospital_ID = h.Hospital_Name
+WHERE h.Bed_Size < 400;
+
+
+
+
 
