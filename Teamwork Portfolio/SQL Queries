@@ -23,7 +23,7 @@ JOIN doctors ON prescriptions.Doctor_ID = doctors.ID
 WHERE doctors.Doctor_Name = 'Specific Patient Name';
 
 4. Prints a table showing all prescriptions ordered by a specific patient name alphabetically
-SELECT patients.Patient_Name, prescriptions.ID AS Prescription_ID, prescriptions.Medication_ID, prescriptions.Doctor_ID, prescriptions.Date_Of_Prescription
+SELECT prescriptions.Medication_ID, prescriptions.Doctor_ID, prescriptions.Date_Of_Prescription
 FROM prescriptions
 JOIN patients ON prescriptions.Patient_ID = patients.ID
 WHERE patients.Patient_Name = 'Specified Patient Name'
