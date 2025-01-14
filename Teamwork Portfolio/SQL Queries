@@ -6,7 +6,7 @@ cases, such as retrieving information, updating records and generating reports b
 1. Prints a list of all doctors based at a particular hospital - Replace Specific Hospital Name:
 SELECT doctors.Doctor_Name
 FROM doctors
-JOIN hospitals ON doctors.Hospital_ID = hospitals.ID3
+JOIN hospitals ON doctors.Hospital_ID = hospitals.ID
 WHERE hospitals.Hospital_Name = 'Specific Hospital Name';
 
 2. Prints a list of all prescriptions for a particular patient, ordered by the prescription date:
