@@ -67,7 +67,7 @@ WHERE diseases.Disease_Name = 'Specific Disease';
 SELECT lab_results.Patient_ID, lab_results.Test_Type, lab_results.Test_Result
 FROM lab_results 
 JOIN patients ON lab_results.Patient_ID = patients.ID
-WHERE YEAR(CURDATE()) - YEAR(patients.Date_Of_Birth) >= 60;
+WHERE TIMESTAMPDIFF(YEAR, patients.Date_Of_Birth, CURDATE()) >= 60;
 
 12. Prints a list of all appointments for a given patient:
 SELECT a.ID AS Appointment_ID, d.Doctor_Name, a.Appointment_Date
