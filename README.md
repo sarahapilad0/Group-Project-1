@@ -56,3 +56,4 @@ Future Enhancements
 2.	Implement a front-end interface for user-friendly operations.
 3.	Integrate advanced querying features like patient history and analytics.
 4.	Add notifications for upcoming appointments.
+
