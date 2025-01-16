@@ -87,6 +87,7 @@ Dr. Mark Harris
 
 Appointment_ID	Doctor_Name	Appointment_Date
 23	Dr. Robert Williams	2024-02-16
+
 ID	Patient_Name	Appointment_Date
 1	Amelia Johnson	2024-07-01
 2	Emma Scott	2024-08-10
