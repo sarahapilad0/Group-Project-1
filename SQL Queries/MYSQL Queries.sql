@@ -1,6 +1,5 @@
 -- SQL Queries for MYSQL.
 -- This file contains a list of SQL queries designed to interact with the hospital database within this project. The queries are intended for use in MySQL.
--- It covers a variety of operations for managing hospital records, including patients, prescriptions, doctors, appointments and lab results. Each query is written to support common use cases, such as retrieving information, updating records and generating reports based on hospital-related data.
 
 -- 1. Prints a list of all doctors based at a particular hospital - Replace Specific Hospital Name:
 SELECT doctors.Doctor_Name
