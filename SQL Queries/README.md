@@ -1,4 +1,4 @@
-SQL Queries for Hospital Database Project
+## SQL Queries for Hospital Database Project
 
 This folder contains SQL queries used for interacting with the hospital database in this project. The queries are applicable for both MySQL and MS Access databases. The contents of the folder include example SQL queries, along with a file showing the results of these queries to demonstrate the validity of the code.
 
