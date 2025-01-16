@@ -114,42 +114,42 @@ Refer to the provided pseudocode for detailed logic and functionality.
 
 **Queries Used**
 
-## Printing the list of all Doctors at a particular hospital
+Printing the list of all Doctors at a particular hospital
 
-## Print a list of all prescriptions for a particular patient, ordered by prescription date
+Print a list of all prescriptions for a particular patient, ordered by prescription date
 
-## Prints a list of all prescriptions that a particular doctor has prescribed:
+Prints a list of all prescriptions that a particular doctor has prescribed:
 
-## To print a table showing all prescriptions ordered by a specific patient name alphabetically
+To print a table showing all prescriptions ordered by a specific patient name alphabetically
 
-## Adds a new patient to the database, including being registered with one of the doctors
+Adds a new patient to the database, including being registered with one of the doctors
 
-## Modify the address details of an existing patient. Insert new address and specify patient name
+Modify the address details of an existing patient. Insert new address and specify patient name
 
-## Prints a list of all patient names and addresses for patients registered to doctors based at one particular hospital
+Prints a list of all patient names and addresses for patients registered to doctors based at one particular hospital
 
-## Prints a list of all doctors based at teaching hospitals accredited between 2015-2024
+Prints a list of all doctors based at teaching hospitals accredited between 2015-2024
 
-## Lists all patients who may have a particular disease based on which medication they have been prescribed. Insert medication in \'Specific Medication Name\'
+Lists all patients who may have a particular disease based on which medication they have been prescribed. Insert medication in \'Specific Medication Name\'
 
-## Lists all doctors who specialise in a particular disease. Replace \'Specific Disease.
+Lists all doctors who specialise in a particular disease. Replace \'Specific Disease.
 
-## Lists all lab results for all patients over the age of 60
+Lists all lab results for all patients over the age of 60
 
-## Prints a list of all appointments for a given patient
+Prints a list of all appointments for a given patient
 
-## Prints a list of all appointments for a given doctor
+Prints a list of all appointments for a given doctor
 
-## Prints all prescriptions made from a particular hospital ordered alphabetically by the name of the medication
+Prints all prescriptions made from a particular hospital ordered alphabetically by the name of the medication
 
-## Prints a list of all lab results from all hospitals accredited between 2013-2020
+Prints a list of all lab results from all hospitals accredited between 2013-2020
 
-## Identifies which doctor has made the most prescriptions
+Identifies which doctor has made the most prescriptions
 
-## Prints a list of all doctors at the hospital with the biggest size (number of beds)
+Prints a list of all doctors at the hospital with the biggest size (number of beds)
 
-## Lists all hospital names accredited prior to 2015 and have emergency services:
+Lists all hospital names accredited prior to 2015 and have emergency services:
 
-## Lists all patients registered with doctors based at hospitals with \<400 beds
+Lists all patients registered with doctors based at hospitals with \<400 beds
 
-##  {#section .unnumbered}
+{#section .unnumbered}
