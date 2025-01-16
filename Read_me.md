@@ -40,7 +40,7 @@ querying for upcoming appointments.
 
     -   Retrieve upcoming appointments for a specified doctor.
 
-**Database Schema**
+## Database Schema
 
 **Main Files:**
 
@@ -86,7 +86,7 @@ System, including:
 
 Refer to the provided pseudocode for detailed logic and functionality.
 
-**Usage**
+## Usage 
 
 **Prerequisites:**
 
@@ -112,7 +112,7 @@ Refer to the provided pseudocode for detailed logic and functionality.
     -   Execute the system to manage hospital data, schedule
         appointments, and query details.
 
-**Queries Used**
+## Queries Used
 
 - Printing the list of all Doctors at a particular hospital
 
