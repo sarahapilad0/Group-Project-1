@@ -152,4 +152,3 @@ Refer to the provided pseudocode for detailed logic and functionality.
 
 - Lists all patients registered with doctors based at hospitals with \<400 beds
 
-{#section .unnumbered}
