@@ -1,6 +1,6 @@
-**Hospital Management Database**
+## Hospital Management Database
 
-**Overview**
+# Overview
 
 This project implements a Hospital Management System that facilitates
 the management of patients, doctors, appointments, and disease records.
@@ -8,7 +8,7 @@ The system is designed to interact with a relational database, providing
 essential functionality such as data entry, appointment scheduling, and
 querying for upcoming appointments.
 
-**Features**
+# Features
 
 1.  **Patient Management**:
 
