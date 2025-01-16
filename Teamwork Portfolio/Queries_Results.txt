@@ -1,0 +1,755 @@
+Doctor_Name
+Dr. John Smith
+Dr. Jason Green
+Dr. Henry Wood
+
+Prescription_ID	Medication_ID	Date_Of_Prescription	Doctor_ID	Patient_Name
+215	7	2023-01-11	28	Grace Lee
+
+Medication_ID	Doctor_ID	Date_Of_Prescription
+7	28	2023-01-11
+
+Patient_Name	Patient_Address
+Amelia Johnson	42 Elm Street, London, SW1A 1AA
+Olivia Harris	19 Willow Lane, Belfast, BT1 6NN
+Emma Clarkson	42 Elm Road, Manchester, M1 1AE
+Amelia Clarke	12 Maple Avenue, London, SW1A 1BB
+Henry Robinson	89 Maple Path, Cardiff, CF1 1LL
+Noah Taylor	42 Oakwood Path, Derby, DE1 1BB
+Emma Scott	78 Birch Street, Cardiff, CF2 3MM
+Benjamin Brown	89 Willow Gardens, Stoke-on-Trent, ST2 8BB
+Grace Harris	56 Birch Walk, Cardiff, CF1 1LL
+Grace White	42 Oakwood Path, Cardiff, CF1 1LL
+Zoe Taylor	19 Maple Walk, Derby, DE1 1BB
+Mason Robinson	89 Willow Grove, Derby, DE1 1BB
+Ethan White	56 Cedar Street, Leeds, LS2 4FF
+Liam Scott	56 Cedar Road, Reading, RG2 9PP
+Grace Kelly	78 Oakwood Road, Cardiff, CF1 1LL
+Zoe Adams	78 Oakwood Lane, Cardiff, CF1 1LL
+Ethan Clarke	56 Maple Grove, London, SW1A 1BB
+Lucas Johnson	12 Maple Crescent, Hull, HU1 0UU
+Lucas Johnson	12 Maple Crescent, Hull, HU1 0UU
+
+Doctor_Name
+Dr. Emily Johnson
+Dr. Diane Adams
+Dr. Evelyn James
+Dr. Michael Jones
+Dr. Scott Mitchell
+Dr. Christian Mendoza
+Dr. David Davis
+Dr. Justin Roberts
+Dr. Jack Hughes
+Dr. Peter Gonzalez
+Dr. Aaron Parker
+Dr. Owen Myers
+Dr. Christopher Anderson
+Dr. Nicholas Edwards
+Dr. Scott Davis
+Dr. Matthew Jackson
+Dr. Jacob Morris
+Dr. Michael Wright
+Dr. Mark Harris
+Dr. Kyle Ortiz
+Dr. Barbara Sanchez
+Dr. Rose Morgan
+Dr. Steven Walker
+Dr. Benjamin Kelly
+Dr. Joseph Allen
+Dr. Gregory Ramos
+Dr. Ruth Flores
+Dr. Megan Chavez
+
+Patient_Name
+Ethan Hall
+Zoe Martinez
+Amelia Bennett
+Grace Martinez
+Lucas Taylor
+Lucas Taylor
+Henry Taylor
+Olivia Johnson
+Ethan Bailey
+Grace Torres
+Zoe King
+Benjamin Taylor
+Sophia Murphy
+Benjamin Taylor
+Mason Hall
+Grace White
+Ethan White
+Lucas Scott
+Amelia Griffin
+Henry Parker
+
+Doctor_Name
+Dr. Mark Harris
+
+Appointment_ID	Doctor_Name	Appointment_Date
+23	Dr. Robert Williams	2024-02-16
+ID	Patient_Name	Appointment_Date
+1	Amelia Johnson	2024-07-01
+2	Emma Scott	2024-08-10
+3	Ethan White	2024-05-15
+4	Sophia Torres	2024-03-22
+5	Amelia Harris	2024-10-03
+6	Grace Taylor	2024-06-18
+7	Sophia Robinson	2024-09-12
+8	Ethan Johnson	2024-04-20
+9	Noah Robinson	2024-11-29
+10	Olivia Johnson	2024-07-17
+11	Charlotte Harris	2024-02-28
+
+Medication_Name	Doctor_Name	Patient_Name	Hospital_Name
+Amlodipine 5mg Tablets	Dr. Henry Wood	Olivia Kelly	Royal London Hospital
+Amlodipine 5mg Tablets	Dr. Jason Green	Ethan Johnson	Royal London Hospital
+Aspirin 75mg Dispersible Tablets	Dr. Jason Green	Grace Robinson	Royal London Hospital
+Atorvastatin 20mg Tablets	Dr. Jason Green	Ethan Murphy	Royal London Hospital
+Atorvastatin 20mg Tablets	Dr. Henry Wood	Amelia Young	Royal London Hospital
+Bisoprolol 5mg Tablets	Dr. Jason Green	Zoe Harris	Royal London Hospital
+Clarithromycin 500mg Tablets	Dr. John Smith	Benjamin Adams	Royal London Hospital
+Diazepam 5mg Tablets	Dr. John Smith	Ethan Harris	Royal London Hospital
+Doxycycline 100mg Capsules	Dr. Henry Wood	Charlotte Kelly	Royal London Hospital
+Fluoxetine 20mg Capsules	Dr. Jason Green	Henry Robinson	Royal London Hospital
+Gliclazide 80mg Tablets	Dr. Jason Green	Lucas Johnson	Royal London Hospital
+Levothyroxine 50mcg Tablets	Dr. Jason Green	Noah Taylor	Royal London Hospital
+Metformin 500mg Tablets	Dr. Jason Green	Sophia Bennett	Royal London Hospital
+Paracetamol 500mg Tablets	Dr. John Smith	Ethan Bailey	Royal London Hospital
+Paracetamol 500mg Tablets	Dr. Jason Green	Amelia Griffin	Royal London Hospital
+Ramipril 10mg Capsules	Dr. John Smith	Zoe Brown	Royal London Hospital
+Salbutamol 100mcg Inhaler	Dr. Henry Wood	Ethan White	Royal London Hospital
+
+Test_Result
+NULL
+NULL
+Abnormal Rhythm
+Signs of Infection
+High LDL
+NULL
+NULL
+NULL
+Joint Inflammation
+Normal
+NULL
+Normal
+Normal
+Severe Depression
+NULL
+Normal
+Normal
+Moderate
+NULL
+NULL
+Moderate
+NULL
+Valve Dysfunction
+NULL
+NULL
+Autoantibodies Detected
+NULL
+NULL
+NULL
+NULL
+Normal
+Normal
+Normal
+NULL
+Normal
+Valve Dysfunction
+Localized Pain
+High LDL
+Mild Depression
+Elevated Pressure
+NULL
+Normal
+NULL
+Normal
+Autoantibodies Detected
+Normal
+Normal
+Elevated TSH
+NULL
+NULL
+Reduced Lung Function
+NULL
+Moderate
+Normal
+Normal
+NULL
+High Blood Sugar
+Abnormal Activity
+Normal
+Elevated ESR
+Normal
+Moderate
+Migraine Indications
+NULL
+NULL
+Elevated CRP
+Normal
+Reduced Lung Function
+Normal
+Positive
+NULL
+NULL
+Normal
+NULL
+Panic Symptoms
+NULL
+Normal
+Signs of Infection
+Esophagitis
+Normal Levels
+NULL
+NULL
+Normal
+Obstruction Detected
+Normal
+Normal
+NULL
+High Rheumatoid Factor
+Autoantibodies Detected
+NULL
+NULL
+NULL
+NULL
+Joint Inflammation
+High Blood Sugar
+NULL
+NULL
+Abnormal Protein Levels
+NULL
+Severe
+NULL
+NULL
+NULL
+NULL
+Infection Detected
+Mild Depression
+Normal
+Normal
+Normal
+NULL
+NULL
+Normal
+NULL
+Elevated ESR
+Normal
+NULL
+Signs of Infection
+Normal
+NULL
+NULL
+NULL
+NULL
+Normal
+NULL
+High Blood Sugar
+Abnormal Activity
+Low T3/T4
+NULL
+NULL
+Normal
+NULL
+Reduced Lung Function
+NULL
+Low Cortisol
+NULL
+NULL
+NULL
+NULL
+NULL
+NULL
+Severe
+Low Cortisol
+NULL
+NULL
+NULL
+Localized Pain
+NULL
+High Blood Sugar
+High Cholesterol
+Normal
+Elevated Pressure
+Elevated HbA1c
+NULL
+Normal Function
+Normal
+Severe Depression
+NULL
+Normal
+NULL
+Signs of Infection
+NULL
+NULL
+Fluid Retention
+NULL
+NULL
+NULL
+NULL
+Joint Inflammation
+Elevated HbA1c
+Normal
+Elevated HbA1c
+Normal
+High Creatinine
+NULL
+Obstruction Detected
+NULL
+NULL
+Normal
+NULL
+Moderate Anxiety
+Negative
+High Creatinine
+Normal
+Abnormal Protein Levels
+Mild
+Elevated ESR
+NULL
+Normal
+Normal
+Signs of Depression
+NULL
+High Creatinine
+Panic Symptoms
+Normal
+NULL
+NULL
+Reduced Ejection Fraction
+Signs of Depression
+NULL
+Normal
+Valve Dysfunction
+Valve Dysfunction
+Reduced Ejection Fraction
+High Creatinine
+Normal
+NULL
+Normal
+Normal
+Signs of Inflammation
+Signs of Inflammation
+Normal
+NULL
+NULL
+Autoantibodies Detected
+Elevated CRP
+NULL
+Nerve Damage
+Normal
+Normal
+Elevated Pressure
+NULL
+NULL
+Elevated Pressure
+NULL
+Low Cortisol
+Elevated TSH
+NULL
+NULL
+NULL
+Autoantibodies Detected
+Elevated ESR
+Normal
+NULL
+Low T3/T4
+Esophagitis
+Normal
+NULL
+Signs of Infection
+Normal
+Negative
+NULL
+Normal
+Elevated Pressure
+Localized Pain
+NULL
+NULL
+Normal
+Elevated TSH
+NULL
+Elevated BNP
+Normal
+NULL
+Normal
+Severe Depression
+NULL
+NULL
+NULL
+NULL
+NULL
+Elevated TSH
+Migraine Indications
+NULL
+Esophagitis
+NULL
+NULL
+Normal
+Normal
+NULL
+NULL
+NULL
+Autoantibodies Detected
+High Blood Sugar
+Autoantibodies Detected
+NULL
+NULL
+NULL
+Elevated Pressure
+NULL
+Mild
+Positive
+NULL
+NULL
+Mild Anxiety
+NULL
+Elevated BNP
+NULL
+Low Cortisol
+Elevated TSH
+Normal Function
+Negative
+NULL
+NULL
+Positive
+High Acidity
+Normal
+Normal
+NULL
+NULL
+NULL
+NULL
+Normal Function
+Negative
+Infection Detected
+Normal
+Obstruction Detected
+NULL
+NULL
+Low T3/T4
+Severe
+NULL
+NULL
+Mild Depression
+Normal
+NULL
+Mild Depression
+Migraine Indications
+NULL
+NULL
+NULL
+High Triglycerides
+Elevated Pressure
+High LDL
+NULL
+NULL
+NULL
+Normal
+NULL
+NULL
+Normal Levels
+NULL
+Severe
+Elevated HbA1c
+High Creatinine
+Elevated TSH
+NULL
+Normal
+Nerve Damage
+Low T3/T4
+NULL
+Moderate
+NULL
+NULL
+High Creatinine
+NULL
+High Acidity
+NULL
+NULL
+Abnormal Activity
+NULL
+NULL
+NULL
+Normal
+Mild Depression
+Signs of Inflammation
+NULL
+Elevated HbA1c
+NULL
+Mild Anxiety
+Normal
+Low T3/T4
+NULL
+NULL
+Normal
+NULL
+NULL
+Positive
+High Rheumatoid Factor
+Normal
+Normal
+NULL
+NULL
+NULL
+Normal
+Elevated HbA1c
+Signs of Inflammation
+Moderate
+NULL
+Abnormal Activity
+Elevated Pressure
+Signs of Inflammation
+Normal
+NULL
+Low Cortisol
+High Creatinine
+Ulcer Present
+NULL
+Normal
+Elevated CRP
+Normal
+Reduced Ejection Fraction
+NULL
+Obstruction Detected
+NULL
+Obstruction Detected
+Elevated CRP
+NULL
+Normal
+NULL
+Normal Levels
+Fluid Retention
+Normal
+Migraine Indications
+Normal
+High Rheumatoid Factor
+NULL
+Elevated Pressure
+Signs of Infection
+Mild
+Severe
+NULL
+NULL
+NULL
+Normal
+NULL
+NULL
+High Blood Sugar
+High Triglycerides
+NULL
+Severe
+Normal Levels
+NULL
+Panic Symptoms
+Normal
+Negative
+Fluid Retention
+Normal
+Normal
+Normal
+NULL
+Normal
+Normal
+NULL
+NULL
+Mild
+NULL
+Reduced Ejection Fraction
+Normal
+NULL
+NULL
+High Rheumatoid Factor
+Obstruction Detected
+NULL
+Low Cortisol
+Esophagitis
+NULL
+High Cholesterol
+NULL
+NULL
+NULL
+NULL
+Nerve Damage
+Normal
+NULL
+NULL
+NULL
+Elevated TSH
+NULL
+NULL
+NULL
+NULL
+Negative
+High Cholesterol
+Mild Depression
+NULL
+Normal
+NULL
+NULL
+Normal
+NULL
+Normal
+Positive
+High Creatinine
+NULL
+NULL
+NULL
+NULL
+NULL
+Normal Function
+Mild
+NULL
+NULL
+NULL
+NULL
+High Acidity
+Signs of Depression
+Normal
+Elevated TSH
+NULL
+NULL
+Abnormal Activity
+Abnormal Activity
+High Blood Sugar
+NULL
+NULL
+Fluid Retention
+Elevated ESR
+Negative
+Elevated Pressure
+Elevated Pressure
+NULL
+NULL
+NULL
+NULL
+High Cholesterol
+NULL
+Panic Symptoms
+Esophagitis
+NULL
+Severe
+Normal
+NULL
+NULL
+NULL
+Normal
+NULL
+NULL
+NULL
+NULL
+Normal
+Severe
+Elevated BNP
+Normal
+Normal
+NULL
+NULL
+High Creatinine
+NULL
+NULL
+NULL
+Localized Pain
+Elevated Pressure
+High Acidity
+NULL
+Normal
+NULL
+Elevated BNP
+Normal
+Elevated ESR
+Normal
+Normal
+NULL
+Obstruction Detected
+Signs of Inflammation
+NULL
+Normal
+NULL
+Normal Function
+NULL
+NULL
+Normal
+NULL
+Signs of Infection
+NULL
+Normal
+NULL
+Severe Anxiety
+NULL
+NULL
+NULL
+Nerve Damage
+Elevated TSH
+NULL
+NULL
+NULL
+NULL
+NULL
+Ulcer Present
+Moderate
+Abnormal Rhythm
+Panic Symptoms
+Normal
+NULL
+NULL
+NULL
+Moderate Anxiety
+NULL
+Positive
+NULL
+Signs of Depression
+Panic Symptoms
+NULL
+NULL
+Migraine Indications
+Normal
+NULL
+NULL
+Normal
+Elevated BNP
+NULL
+Elevated BNP
+NULL
+Low T3/T4
+Joint Inflammation
+Normal
+Mild Depression
+Normal Function
+NULL
+NULL
+NULL
+NULL
+
+Doctor_Name	Total_Prescriptions
+Dr. Susan Brown	10
+
+Doctor_Name
+Dr. Joseph Allen
+Dr. Gregory Ramos
+
+Hospital_Name
+Birmingham City Hospital
+John Radcliffe Hospital
+Queen's Medical Centre
+Freeman Hospital
+Stoke Mandeville Hospital
+
+Patient_Name	Doctor_Name	Hospital_Name
+Benjamin White	Dr. Sarah Miller	Great Ormond Street Hospital
+Charlotte Martinez	Dr. Sarah Miller	Great Ormond Street Hospital
+Benjamin Carter	Dr. Sarah Miller	Great Ormond Street Hospital
+Ethan Turner	Dr. Sarah Miller	Great Ormond Street Hospital
+Charlotte Adams	Dr. Sarah Miller	Great Ormond Street Hospital
+Zoe Kelly	Dr. Sarah Miller	Great Ormond Street Hospital
+Grace Mount	Dr. Laura Carter	Great Ormond Street Hospital
+Grace Summers	Dr. Laura Carter	Great Ormond Street Hospital
+Henry Kelly	Dr. Laura Carter	Great Ormond Street Hospital
+Ethan Bailey	Dr. Laura Carter	Great Ormond Street Hospital
+Charlotte Adams	Dr. Laura Carter	Great Ormond Street Hospital
+Benjamin Taylor	Dr. Laura Carter	Great Ormond Street Hospital
+Zoe Harris	Dr. Julie Ruiz	Great Ormond Street Hospital
+Noah Taylor	Dr. Julie Ruiz	Great Ormond Street Hospital
+Mason Brown	Dr. Julie Ruiz	Great Ormond Street Hospital
+Sophia Harris	Dr. Julie Ruiz	Great Ormond Street Hospital
+Charlotte Hall	Dr. Julie Ruiz	Great Ormond Street Hospital
